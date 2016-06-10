@@ -1,28 +1,17 @@
 <html>
 <head>
-	<title> RainMachine Web Application </title>
+	<title> RainMachine API Test Application </title>
 	<meta charset="utf-8" />
 	<link rel="icon" type="image/ico" href="http://rainmachine.com/favicon.ico">
 	<link href="css/ui.css" rel="stylesheet" type="text/css">
-	<script src="js/highcharts-custom.js"></script>
 	<script src="js/dom.js"></script>
     <script src="js/storage.js"></script>
 	<script src="js/util.js"></script>
 	<script src="js/async.js"></script>
     <script src="js/rainmachine-api-v4.js"></script>
 	<script src="js/data.js"></script>
-
-
-	<script src="js/ui-charts.js"></script>
-	<script src="js/ui-charts-parsers.js"></script>
 	<script src="js/ui-login.js"></script>
-	<script src="js/ui-restrictions.js"></script>
-	<script src="js/ui-settings.js"></script>
-	<script src="js/ui-system-settings.js"></script>
-    <script src="js/ui-about.js"></script>
-	<script src="js/ui-programs.js"></script>
-	<script src="js/ui-zones.js"></script>
-	<script src="js/ui-testing.js"></script>
+	<script src="js/ui-testing-sync.js"></script>
 </head>
 <body>
 	<!-- Success Start -->
@@ -32,9 +21,11 @@
 	<div id="error"></div>
 	<!-- Error End -->
 	<!-- Program Settings Start -->
-	<div id="STOP">
-		Click to STOP
-	</div>
+	<!-- <button id="STOP">Stop</button> -->
+	<button id="run" class="button blue">Run API Calls</button><br>
+	Runs: <div id="apiruns">0</div>
+	<br>
+	<div id="logs"></div>
 
 	<div class="loginContainer">
 		<div class="loginInnerContainer">
