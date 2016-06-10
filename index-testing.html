@@ -1,0 +1,54 @@
+<html>
+<head>
+	<title> RainMachine Web Application </title>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/ico" href="http://rainmachine.com/favicon.ico">
+	<link href="css/ui.css" rel="stylesheet" type="text/css">
+	<script src="js/highcharts-custom.js"></script>
+	<script src="js/dom.js"></script>
+    <script src="js/storage.js"></script>
+	<script src="js/util.js"></script>
+	<script src="js/async.js"></script>
+    <script src="js/rainmachine-api-v4.js"></script>
+	<script src="js/data.js"></script>
+
+
+	<script src="js/ui-charts.js"></script>
+	<script src="js/ui-charts-parsers.js"></script>
+	<script src="js/ui-login.js"></script>
+	<script src="js/ui-restrictions.js"></script>
+	<script src="js/ui-settings.js"></script>
+	<script src="js/ui-system-settings.js"></script>
+    <script src="js/ui-about.js"></script>
+	<script src="js/ui-programs.js"></script>
+	<script src="js/ui-zones.js"></script>
+	<script src="js/ui-testing.js"></script>
+</head>
+<body>
+	<!-- Success Start -->
+	<div id="success"></div>
+	<!-- Success End -->
+	<!-- Error Start -->
+	<div id="error"></div>
+	<!-- Error End -->
+	<!-- Program Settings Start -->
+	<div id="STOP">
+		Click to STOP
+	</div>
+
+	<div class="loginContainer">
+		<div class="loginInnerContainer">
+			<div class="center">
+				<h1>RainMachine</h1>
+				<span class="subtitle">login</span>
+			</div>
+			<div class="clear30"></div>
+			<div><input type="password" id="loginPassword" placeholder="Password"/></div>
+			<div><input type="checkbox" id="loginRememberMe" class="middle"/> <span>Remember me</span></div>
+			<div class="error" id="loginError" style="display:none;"></div>
+			<br>
+			<button id="loginButton" class="button blue center right">Login</button>
+		</div>
+	</div>
+</body>
+</html>
