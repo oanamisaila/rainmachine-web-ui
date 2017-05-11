@@ -648,7 +648,7 @@ window.ui = window.ui || {};
 
 			//console.log("Day: %s Temp: %s/%s QPF: %s", day.date, dayMinTempStr, dayMaxTempStr, dayQpfStr);
 
-			dayNameElem.textContent = Util.deviceDateStrToDate(day.date).toDateString(); //DATE Issue: (new Date(day.date)).toDateString();
+			dayNameElem.textContent = Util.deviceDateStrToDate(day.date).toDateString();
 			dayConditionElem.textContent = dayConditionStr;
 			dayTempMaxElem.textContent = dayMaxTempStr;
 			dayTempMinElem.textContent = dayMinTempStr;
